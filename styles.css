@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap');
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+h1, p, img {
+    align-self: center;
+}
+
+nav {
+	margin-left: 20px;
+}
