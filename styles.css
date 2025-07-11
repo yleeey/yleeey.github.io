@@ -3,12 +3,53 @@
 body {
 	display: flex;
 	flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1a1a2e, 0%, 16213e 100%);  
+    color: white;
+    font-family: 'Roboto', sans-serif;  
 }
 
+nav {
+    margin: 20px 0 20px 20px;
+}
+
+nav a {
+    color: #f8f8f8;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4cc9f0;
+}
+
+/* Make h1, p, img centered*/
 h1, p, img {
     align-self: center;
 }
 
-nav {
-	margin-left: 20px;
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: #4cc9f0;
+    text-shadow: 0 0 10px rgba(76, 201, 240, 0.5);
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Image styling */
+img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(76, 201, 240, 0.3);
+    margin-top: 20px;
 }
