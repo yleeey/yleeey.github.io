@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap');
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
 
 body {
 	display: flex;
@@ -6,7 +10,7 @@ body {
     min-height: 100vh;
     margin: 0;
     background: linear-gradient(135deg, #1a1a2e, 0%, 16213e 100%);  
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;  
 }
 
@@ -15,10 +19,11 @@ nav {
 }
 
 nav a {
-    color: #f8f8f8;
+    color: #000000;
     text-decoration: none;
     margin-right: 15px;
     font-size: 1.1rem;
+    font-family: "San Francisco", 'Roboto', sans-serif;
     transition: color 0.3s;
 }
 
@@ -27,19 +32,20 @@ nav a:hover {
 }
 
 /* Make h1, p, img centered*/
-h1, p, img {
+.home-page h1,
+.home-page p,
+.home-page img {
     align-self: center;
 }
 
-h1 {
+.home-page h1 {
     font-family: 'Pacifico', cursive;
     font-size: 3rem;
-    color: #4cc9f0;
-    text-shadow: 0 0 10px rgba(76, 201, 240, 0.5);
+    color: #000000;
     margin-bottom: 10px;
 }
 
-p {
+.home-page p {
     font-size: 1.2rem;
     max-width: 600px;
     text-align: center;
@@ -47,9 +53,32 @@ p {
 }
 
 /* Image styling */
-img {
+.home-page img {
     max-width: 300px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(76, 201, 240, 0.3);
     margin-top: 20px;
+}
+
+/* Trying to make it so homepage doesnt have 'Home' */
+.home-page nav a[href="index.html"] {
+    display: none;
+}
+
+.blog-page article {
+    width: 100%;
+    max-width: 800px;
+    align-self: normal;
+}
+
+.blog-page h1 {
+    margin-left: 15px;
+}
+
+.blog-page h2 {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.blog-page p {
+    margin-left: 15px;
 }
