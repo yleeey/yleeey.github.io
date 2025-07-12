@@ -1,84 +1,56 @@
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 400;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
-}
-
 body {
-	display: flex;
-	flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    background: linear-gradient(135deg, #1a1a2e, 0%, 16213e 100%);  
-    color: rgb(0, 0, 0);
-    font-family: 'Roboto', sans-serif;  
+    background-color: #292a2e;
 }
 
-nav {
-    margin: 20px 0 20px 20px;
+.home-page {
+    color: #f1f0f1;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin-left: 20px;
+    margin-top: 12px;
+    font-size: 20px;
 }
 
-nav a {
-    color: #000000;
+.projects-page {
+    color: #f1f0f1;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin-left: 20px;
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+.blogs-page {
+    color: #f1f0f1;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin-left: 20px;
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+.home-link {
+    color: #6bd1ff;
+    margin-right: 15px; /* Reduced from default link spacing */
+    display: inline-block; /* Ensures margin applies correctly */
+}
+
+
+.welcome-msg {
+    font-size: 20px;
+}
+
+/* Link Styling */
+a {
+    color: #6bd1ff; /* Light blue - softer than default */
     text-decoration: none;
-    margin-right: 15px;
-    font-size: 1.1rem;
-    font-family: "San Francisco", 'Roboto', sans-serif;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: #4cc9f0;
+a:hover {
+    color: #a6e3ff; /* Lighter blue on hover */
+    text-decoration: underline;
 }
 
-/* Make h1, p, img centered*/
-.home-page h1,
-.home-page p,
-.home-page img {
-    align-self: center;
+/* Optional: Different color for visited links */
+a:visited {
+    color: #c792ea; /* Soft purple */
 }
 
-.home-page h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 3rem;
-    color: #000000;
-    margin-bottom: 10px;
-}
-
-.home-page p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    text-align: center;
-    line-height: 1.6;
-}
-
-/* Image styling */
-.home-page img {
-    max-width: 300px;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-/* Trying to make it so homepage doesnt have 'Home' */
-.home-page nav a[href="index.html"] {
-    display: none;
-}
-
-.blog-page article {
-    width: 100%;
-    max-width: 800px;
-    align-self: normal;
-}
-
-.blog-page h1 {
-    margin-left: 15px;
-}
-
-.blog-page h2 {
-    text-align: left;
-    margin-left: 15px;
-}
-
-.blog-page p {
-    margin-left: 15px;
-}
